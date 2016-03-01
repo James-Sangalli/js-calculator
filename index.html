@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculate!</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+
+
+  <div class="row">
+  <div class="large-12 columns"></div>
+
+    <div class="large-6 columns">
+      <div id="calculator">
+          <input type="text" readonly=""  id="resultBox">
+          <div id="buttons">
+            <button class="large" type="button" value="remainder" >%</button>
+            <button class="large" type="button" value="divide"onclick=calc("/")>/</button>
+            <button class="large" type="button" value="ans">ans</button>
+            <button class="large" type="button" value="addition" onclick=calc("+")>+</button>
+            <button class="large" type="button" value="minus"onclick=calc("-")>minus</button>
+            <button class="large" type="button" value="multiply"onclick=calc("*")>*</button>
+            <button class="large" type="button" value="decimal"onclick=calc(".")>.</button>
+            <button class="large alert" type="button" value="clear"onclick=calc("clear")>clear</button>
+            <button class="large success" type="button" value="getResult" onclick=calc("sum")>=</button>
+          </div>
+
+            <div id="numberKeys">
+              <button class="small" type="button" value="1" onclick=calc(1)>1</button>
+              <button class="small" type="button" value="2" onclick=calc(2)>2</button>
+              <button class="small" type="button" value="3" onclick=calc(3)>3</button>
+              <button class="small" type="button" value="4" onclick=calc(4)>4</button>
+
+              <button class="small" type="button" value="5" onclick=calc(5)>5</button>
+              <button class="small" type="button" value="6" onclick=calc(6)>6</button>
+              <button class="small" type="button" value="7" onclick=calc(7)>7</button>
+              <button class="small" type="button" value="8" onclick=calc(8)>8</button>
+              <button class="small" type="button" value="9" onclick=calc(9)>9</button>
+            </div>
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div id="description">
+        <h2>js-calculator</h2>
+        <em>A simple calculator by <a href="https://github.com/KeakOne">Keakone</a>&<a href="https://github.com/James-Sangalli">James Sangalli</a></em>
+      </div>
+    </div>
+  </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
