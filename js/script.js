@@ -1,5 +1,5 @@
 var result = ""; //must be a string so it concatenates rather than adds
-var nonNum = true; //prevents user from pressing non numbers multiple times in a row
+var nonNum = false; //prevents user from pressing non numbers multiple times in a row
 
 function calc(digit){
 
