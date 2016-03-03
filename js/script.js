@@ -5,12 +5,11 @@ function calc(digit){
 
     if (digit == "sum"){
         $("#resultBox").val(eval(result));
-        nonNum = true;
     }
     else if (digit == "clear"){
         location.reload();
     }
-    else if (isNaN(digit) && nonNum == true){
+    else if (isNaN(digit) && nonNum == true || digit == "-"){
         result += digit;
         nonNum = false; 
     }
@@ -20,4 +19,3 @@ function calc(digit){
       nonNum = true;  
     }
 }
-
