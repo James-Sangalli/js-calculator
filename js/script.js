@@ -13,7 +13,7 @@ function calc(digit){
         result += digit;
         nonNum = false; 
     }
-    else if (!isNaN(digit)){
+    else{
       result += digit; 
       $("#resultBox").val(result);
       nonNum = true;  
