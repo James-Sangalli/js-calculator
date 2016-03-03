@@ -3,20 +3,13 @@ var nonNum = false; //prevents user from pressing non numbers multiple times in 
 
 function calc(digit){
 
-    if (digit == "ans"){
-        var prevResult = result;
-        result = prevResult;
-        $("#resultBox").append("Ans");
-        nonNum = true;
-    }
-    else if (digit == "sum"){
+    if (digit == "sum"){
         $("#resultBox").val(eval(result));
-        nonNum = true;
     }
     else if (digit == "clear"){
         location.reload();
     }
-    else if (isNaN(digit) && nonNum == true){
+    else if (isNaN(digit) && nonNum == true || digit == "-"){
         result += digit;
         nonNum = false; 
     }
@@ -26,26 +19,3 @@ function calc(digit){
       nonNum = true;  
     }
 }
-
-// var result = ""; //must be a string so it concatenates rather than adds
-
-// function calc(digit){
-
-//     if (digit == "ans"){
-//         var prevResult = result;
-//         result = prevResult;
-//         $("#resultBox").append("Ans");
-//     }
-//     else if (digit == "sum"){
-//         $("#resultBox").val(eval(result));
-//     }
-//     else if (digit == "clear"){
-//         location.reload();
-//     }
-//     else{
-//       result += digit; 
-//       $("#resultBox").val(result);  
-//     }
-// }
-
-
